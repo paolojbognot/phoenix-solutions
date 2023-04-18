@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Screensaver!</title>
+    <style>
+      body {
+        background-color: #000;
+      }
+      
+      .wrapper {
+        background-image: url("bg/0.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: 0 auto;
+        position: relative;
+        
+        width: 98vw;
+        height: 98vh;
+      }
+      
+      .quote {
+        color: #ffffff;
+        font-family: Georgia;
+        position: absolute;
+            top: 15%;
+            left: 50%;
+            text-align: center;
+        text-shadow: 0 1px 7px rgba(0, 0, 0, 0.9);
+        transform: translate(-50%, -50%);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="wrapper"></div>
+    <h1 class="quote" id="quote">"Today is a new day, let us be better today then we were yesterday."</h1>
+    <script src="jquery.js"></script>
+    <script>
+      
+      // Generate random integer
+      function randomInt(min, max) {
+        'use strict';
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      
+      // Randomize Face Picture in HTML
+      function randomImage() {
+        'use strict';
+        const picArr = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];    // Array of background pictures
+        let pic = randomInt(0,24);
+        $('.wrapper').css(`background-image`, `url("bg/${pic}.jpg")`);
+        $('.wrapper').hide().fadeIn(1000);
+      }
+      
+      // Randomize #sellerName
+      function randomQuote() {
+        'use strict';
+        const quote = [
+          "You are amazing!",
+          "Eventhough the fool associated with the wise man, he no more understands the truth than the spoon tastes the flavor of the soup.",
+          "If you're not first, you're last.",
+          "A dream without action will remain a dream.",
+          "Sometimes in life you may not know what to do, but as long as you know what not to do then you shall prevail.",
+          "A wise man once said nothing at all.",
+          "If you want something you never had, you have to do something you have never done.",
+          "Though we are products of our past, we do not have to be prisoners to them",
+          "If you have one foot in the past and one foot the future then you are pissing on your present.",
+          "The pain of discipline is far less than the pain of defeat.",
+          "You are worthy of happiness and success!"
+        ];
+        let i = randomInt(0,9);
+        $('#quote').text(`${quote[i]}`)
+        $('#quote').hide().fadeIn(1000);
+      }
+      
+      function timerImage(num){
+        setInterval("randomImage()", num);
+      }
+      
+      function timerQuote(num){
+        setInterval("randomQuote()", num);
+      }
+
+      // $('html').on('click',() => {
+      //   console.log(`click!`);
+      //   randomImage();
+      //   randomQuote();
+      // });
+      
+      timerImage(5000);
+      timerQuote(5000);
+    </script>
+    
+  </body>
+</html>

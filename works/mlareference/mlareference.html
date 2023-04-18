@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>MLA Reference Creator - "Create Works Cited pages with ease!</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template -->
+    <link href="css/pretty.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <nav class="navbar-collapse collapse inverse bg-info text-light" id="navbar-header">
+      <div class="container-fluid">
+        <div class="about">
+          <h4>Our Mission</h4>
+          <p class="text-light">
+            Our goal at Phoenix Solutions&copy; is to assist and support the academic lives of incarcerated students, by providing them high-quality solutions. Through the utilization of our tools we hope to rehabilitate incarcerated students by assisting them on their path of positive change, freedom, and ultimately redemption.
+          </p>
+        </div>
+        
+        <div class="social">
+          <h4>Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-warning">Follow on Twitter</a></li>
+            <li><a href="#" class="text-warning">Like on Facebook</a></li>
+            <li><a href="#" class="text-warning">Email me</a></li>
+          </ul>
+        </div><!-- end social -->
+      </div><!-- end container-fluid -->
+    </nav>
+    
+    
+    <div class="navbar navbar-static-top navbar-dark bg-info">
+      <div class="container-fluid">
+        <button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#navbar-header">
+          &#9776;
+        </button>
+        <a href="#" class="navbar-brand">MLA Reference Creator</a>
+      </div>
+    </div>
+
+
+    <section class="jumbotron text-xs-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">MLA Reference Creator</h1>
+        <p class="lead text-muted">Create Works Cited pages easily with our Reference Creator. Simply select a reference type and enter the appropriate information and <em>voila!</em> An <a href="#" data-toggle="tooltip" data-placement="top" title="Modern Language Association">MLA</a> formatted reference will be generated at the click of a button.</p>
+        <fieldset class="form-group">
+          <legend>Select Reference Type:</legend>
+          <div class="form-group">
+            <select class="form-control" id="referenceType">
+              <option value="none">Choose One...</option>
+              <option value="bookOne">Book with only one Author</option>
+              <option value="bookTwo">Book with two or three Authors</option>
+              <option value="bookMany">Book with four or more Authors</option>
+              <option value="database">Database</option>
+              <option value="encyclopedia">Encyclopedia</option>
+              <option value="journal">Journal</option>
+              <option value="magazine">Magazine</option>
+              <option value="newspaper">Newspaper</option>
+              <option value="onlineBook">Online Book</option>
+              <option value="website">Website</option>
+            </select>
+          </div><!-- end form-group -->
+        </fieldset><!-- end fieldset -->
+      </div><!-- end container -->
+    </section><!-- end jumbotron -->
+    
+    
+    <section class="genContent text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12" id="genContent">
+            <!-- This is where the generated forms will appear -->
+            
+            
+            <!-- #bookOne (Book with One Author) -->
+            <div id="bookOne">
+              <div class="form-group row">
+                <h3 class="col-md-12">Book with One Author</h3>
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Author's First Name</label>
+                <input class="form-control col-md-4" type="text" id="bookOneFirstName" placeholder="first name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Author's Last Name</label>
+                <input class="form-control col-md-4" type="text" id="bookOneLastName" placeholder="last name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Book Title</label>
+                <input class="form-control col-md-4" type="text" id="bookOneTitle" placeholder="title of book...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Publication Location</label>
+                <input class="form-control col-md-4" type="text" id="bookOneLocation" placeholder="location of publisher...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Publishing Company</label>
+                <input class="form-control col-md-4" type="text" id="bookOnePublisher" placeholder="publisher...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Year</label>
+                <input class="form-control col-md-4" type="text" id="bookOneYear" placeholder="year published...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Format</label>
+                <input class="form-control col-md-4" type="text" id="bookOneFormat" placeholder="format...">
+              </div>
+              
+              <div class="form-group row">
+                <div class="offset-md-5 col-md-2">
+                  <button class="btn btn-lg btn-info" id="bookOneBtn">Generate</button>
+                </div>
+              </div>
+            </div><!-- end #bookOne -->
+            
+            
+            <!-- #bookTwo (Book with Two or Three Authors) -->
+            <div id="bookTwo">
+              <div class="form-group row">
+                <h3 class="col-md-12">Book with Two or Three Authors</h3>
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">First Author's First Name</label>
+                <input class="form-control col-md-4" type="text" id="bookTwoFirstFirstName" placeholder="first name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">First Author's Last Name</label>
+                <input class="form-control col-md-4" type="text" id="bookTwoFirstLastName" placeholder="last name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Second Author's First Name</label>
+                <input class="form-control col-md-4" type="text" id="bookTwoSecondFirstName" placeholder="first name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Second Author's Last Name</label>
+                <input class="form-control col-md-4" type="text" id="bookTwoSecondLastName" placeholder="last name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Third Author's First Name</label>
+                <input class="form-control col-md-4" type="text" id="bookTwoThirdFirstName" placeholder="first name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Third Author's Last Name</label>
+                <input class="form-control col-md-4" type="text" id="bookTwoThirdLastName" placeholder="last name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Book Title</label>
+                <input class="form-control col-md-4" type="text" id="bookTwoTitle" placeholder="title of book...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Publication Location</label>
+                <input class="form-control col-md-4" type="text" id="bookTwoLocation" placeholder="location of publisher...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Publishing Company</label>
+                <input class="form-control col-md-4" type="text" id="bookTwoPublisher" placeholder="publisher...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Year</label>
+                <input class="form-control col-md-4" type="text" id="bookTwoYear" placeholder="year published...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Format</label>
+                <input class="form-control col-md-4" type="text" id="bookTwoFormat" placeholder="format...">
+              </div>
+              
+              <div class="form-group row">
+                <div class="offset-md-5 col-md-2">
+                  <button class="btn btn-lg btn-info" id="bookTwoBtn">Generate</button>
+                </div>
+              </div>
+            </div><!-- end #bookTwo -->
+            
+            
+            <!-- #bookMany (Book with Four or More Authors) -->
+            <div id="bookMany">
+              <div class="form-group row">
+                <h3 class="col-md-12">Book with Four or More Authors</h3>
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">First Author's First Name</label>
+                <input class="form-control col-md-4" type="text" id="bookManyFirstName" placeholder="first name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">First Author's Last Name</label>
+                <input class="form-control col-md-4" type="text" id="bookManyLastName" placeholder="last name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Book Title</label>
+                <input class="form-control col-md-4" type="text" id="bookManyTitle" placeholder="title of book...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Publication Location</label>
+                <input class="form-control col-md-4" type="text" id="bookManyLocation" placeholder="location of publisher...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Publishing Company</label>
+                <input class="form-control col-md-4" type="text" id="bookManyPublisher" placeholder="publisher...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Year</label>
+                <input class="form-control col-md-4" type="text" id="bookManyYear" placeholder="year published...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Format</label>
+                <input class="form-control col-md-4" type="text" id="bookManyFormat" placeholder="format...">
+              </div>
+              
+              <div class="form-group row">
+                <div class="offset-md-5 col-md-2">
+                  <button class="btn btn-lg btn-info" id="bookManyBtn">Generate</button>
+                </div>
+              </div>
+            </div><!-- end #bookMany -->
+            
+            
+            <!-- START #database -->
+            <div id="database">
+              <div class="form-group row">
+                <h3 class="col-md-12">Database Article</h3>
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Author's First Name</label>
+                <input class="form-control col-md-4" type="text" id="databaseFirstName" placeholder="first name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Author's Last Name</label>
+                <input class="form-control col-md-4" type="text" id="databaseLastName" placeholder="last name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Title of Article</label>
+                <input class="form-control col-md-4" type="text" id="databaseTitle" placeholder="article title...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Title of Journal</label>
+                <input class="form-control col-md-4" type="text" id="databaseJournalTitle" placeholder="journal title...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Volume Number</label>
+                <input class="form-control col-md-4" type="text" id="databaseVolume" placeholder="volume number...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Issue Number</label>
+                <input class="form-control col-md-4" type="text" id="databaseIssue" placeholder="issue Number...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Year</label>
+                <input class="form-control col-md-4" type="text" id="databaseYear" placeholder="year published...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Page Numbers</label>
+                <input class="form-control col-md-4" type="text" id="databasePages" placeholder="pages...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Database Name</label>
+                <input class="form-control col-md-4" type="text" id="databaseName" placeholder="name of database...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Format</label>
+                <input class="form-control col-md-4" type="text" id="databaseFormat" placeholder="format...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Date Accessed</label>
+                <input class="form-control col-md-4" type="text" id="databaseDate" placeholder="day-month-year...">
+              </div>
+              
+              <div class="form-group row">
+                <div class="offset-md-5 col-md-2">
+                  <button class="btn btn-lg btn-info" id="databaseBtn">Generate</button>
+                </div>
+              </div>
+            </div><!-- end #database -->
+            
+            
+            <!-- #encyclopedia -->
+            <div id="encyclopedia">
+              <div class="form-group row">
+                <h3 class="col-md-12">Encyclopedia</h3>
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Article Title</label>
+                <input class="form-control col-md-4" type="text" id="encyclopediaTitle" placeholder="title of article...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Encyclopedia Name</label>
+                <input class="form-control col-md-4" type="text" id="encyclopediaName" placeholder="name of reference work...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Edition</label>
+                <input class="form-control col-md-4" type="text" id="encyclopediaEdition" placeholder="edition...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Year</label>
+                <input class="form-control col-md-4" type="text" id="encyclopediaYear" placeholder="year published...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Format</label>
+                <input class="form-control col-md-4" type="text" id="encyclopediaFormat" placeholder="format...">
+              </div>
+              
+              <div class="form-group row">
+                <div class="offset-md-5 col-md-2">
+                  <button class="btn btn-lg btn-info" id="encyclopediaBtn">Generate</button>
+                </div>
+              </div>
+            </div><!-- end #encyclopedia -->
+            
+            
+            <!-- #journal -->
+            <div id="journal">
+              <div class="form-group row">
+                <h3 class="col-md-12">Journal Article</h3>
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Author's First Name</label>
+                <input class="form-control col-md-4" type="text" id="journalFirstName" placeholder="first name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Author's Last Name</label>
+                <input class="form-control col-md-4" type="text" id="journalLastName" placeholder="last name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Article Title</label>
+                <input class="form-control col-md-4" type="text" id="journalTitle" placeholder="title of article...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Journal Title</label>
+                <input class="form-control col-md-4" type="text" id="journalName" placeholder="name of journal...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Volume</label>
+                <input class="form-control col-md-4" type="text" id="journalVolume" placeholder="volume number...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Issue</label>
+                <input class="form-control col-md-4" type="text" id="journalIssue" placeholder="issue number...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Year</label>
+                <input class="form-control col-md-4" type="text" id="journalYear" placeholder="year published...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Page Numbers</label>
+                <input class="form-control col-md-4" type="text" id="journalPages" placeholder="pages...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Format</label>
+                <input class="form-control col-md-4" type="text" id="journalFormat" placeholder="format...">
+              </div>
+              
+              <div class="form-group row">
+                <div class="offset-md-5 col-md-2">
+                  <button class="btn btn-lg btn-info" id="journalBtn">Generate</button>
+                </div>
+              </div>
+            </div><!-- end #journal -->
+            
+            
+            <!-- #magazine -->
+            <div id="magazine">
+              <div class="form-group row">
+                <h3 class="col-md-12">Magazine Article</h3>
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Author's First Name</label>
+                <input class="form-control col-md-4" type="text" id="magazineFirstName" placeholder="first name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Author's Last Name</label>
+                <input class="form-control col-md-4" type="text" id="magazineLastName" placeholder="last name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Article Title</label>
+                <input class="form-control col-md-4" type="text" id="magazineTitle" placeholder="title of article...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Magazine Name</label>
+                <input class="form-control col-md-4" type="text" id="magazineName" placeholder="name of magazine...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Date of Publication</label>
+                <input class="form-control col-md-4" type="text" id="magazineDate" placeholder="day-month-year...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Page Numbers</label>
+                <input class="form-control col-md-4" type="text" id="magazinePages" placeholder="page numbers...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Format</label>
+                <input class="form-control col-md-4" type="text" id="magazineFormat" placeholder="format...">
+              </div>
+              
+              <div class="form-group row">
+                <div class="offset-md-5 col-md-2">
+                  <button class="btn btn-lg btn-info" id="magazineBtn">Generate</button>
+                </div>
+              </div>
+            </div><!-- end #magazine -->
+            
+            
+            <!-- #newspaper -->
+            <div id="newspaper">
+              <div class="form-group row">
+                <h3 class="col-md-12">Newspaper Article</h3>
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Author's First Name</label>
+                <input class="form-control col-md-4" type="text" id="newspaperFirstName" placeholder="first name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Author's Last Name</label>
+                <input class="form-control col-md-4" type="text" id="newspaperLastName" placeholder="last name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Title of Article</label>
+                <input class="form-control col-md-4" type="text" id="newspaperTitle" placeholder="title of article...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Newspaper Name</label>
+                <input class="form-control col-md-4" type="text" id="newspaperName" placeholder="name of newspaper...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Date of Publication</label>
+                <input class="form-control col-md-4" type="text" id="newspaperDate" placeholder="day-month-year...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Edition</label>
+                <input class="form-control col-md-4" type="text" id="newspaperEdition" placeholder="edition...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Page Numbers</label>
+                <input class="form-control col-md-4" type="text" id="newspaperPages" placeholder="page numbers...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Format</label>
+                <input class="form-control col-md-4" type="text" id="newspaperFormat" placeholder="format...">
+              </div>
+              
+              <div class="form-group row">
+                <div class="offset-md-5 col-md-2">
+                  <button class="btn btn-lg btn-info" id="newspaperBtn">Generate</button>
+                </div>
+              </div>
+            </div><!-- end #newspaper -->
+            
+            
+            <!-- #onlineBook -->
+            <div id="onlineBook">
+              <div class="form-group row">
+                <h3 class="col-md-12">Online Book</h3>
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Author's First Name</label>
+                <input class="form-control col-md-4" type="text" id="onlineBookFirstName" placeholder="first name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Author's Last Name</label>
+                <input class="form-control col-md-4" type="text" id="onlineBookLastName" placeholder="last name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Book Title</label>
+                <input class="form-control col-md-4" type="text" id="onlineBookTitle" placeholder="title of book...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Website Title</label>
+                <input class="form-control col-md-4" type="text" id="onlineBookWebsite" placeholder="url of website...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Publication or Sponsor</label>
+                <input class="form-control col-md-4" type="text" id="onlineBookPublisher" placeholder="publication or sponsor name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Year</label>
+                <input class="form-control col-md-4" type="text" id="onlineBookYear" placeholder="year published...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Vender Name</label>
+                <input class="form-control col-md-4" type="text" id="onlineBookVender" placeholder="name of Vender...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Format</label>
+                <input class="form-control col-md-4" type="text" id="onlineBookFormat" placeholder="format...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Date of Access</label>
+                <input class="form-control col-md-4" type="text" id="onlineBookDate" placeholder="day-month-year...">
+              </div>
+              
+              <div class="form-group row">
+                <div class="offset-md-5 col-md-2">
+                  <button class="btn btn-lg btn-info" id="onlineBookBtn">Generate</button>
+                </div>
+              </div>
+            </div><!-- end #onlineBook -->
+            
+            
+            <!-- #website-->
+            <div id="website">
+              <div class="form-group row">
+                <h3 class="col-md-12">Website</h3>
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Author's First Name</label>
+                <input class="form-control col-md-4" type="text" id="websiteFirstName" placeholder="first name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Author's Last Name</label>
+                <input class="form-control col-md-4" type="text" id="websiteLastName" placeholder="last name...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Title of Page</label>
+                <input class="form-control col-md-4" type="text" id="websitePageName" placeholder="name of page...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Name of Website</label>
+                <input class="form-control col-md-4" type="text" id="websiteAddress" placeholder="url of website...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Date of Publication</label>
+                <input class="form-control col-md-4" type="text" id="websiteDate" placeholder="day-month-year as available...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Format</label>
+                <input class="form-control col-md-4" type="text" id="websiteFormat" placeholder="format...">
+              </div>
+              
+              <div class="form-group row">
+                <label class="col-form-label text-md-right col-md-5">Date of Access</label>
+                <input class="form-control col-md-4" type="text" id="websiteAccess" placeholder="day-month-year...">
+              </div>
+              
+              <div class="form-group row">
+                <div class="offset-md-5 col-md-2">
+                  <button class="btn btn-lg btn-info" id="websiteBtn">Generate</button>
+                </div>
+              </div>
+            </div><!-- end #website -->
+            
+            
+          </div><!-- end col-md-12 #genContent -->
+        </div><!-- end row -->
+      </div><!-- end container -->
+    </section>
+    
+
+    <div class="album text-muted text-center">
+      <div class="container">
+        <div class="row">
+          <div class="card col-md-12" id="genRef">
+            <!-- appended <p>'s will generated in here -->
+            <p class="card-text">This is where the generated references will be shown.</p>
+          </div><!-- end card -->
+        </div><!-- end row -->
+      </div><!-- end container -->
+    </div><!-- end album -->
+
+
+    <footer class="text-light bg-info">
+      <div class="container">
+        <p class="pull-xs-right">
+          <a href="#" class="text-warning">Back to top</a>
+        </p>
+        <p>GinSanity Inc.&copy; 2019</p>
+      </div>
+    </footer>
+
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.slim.min.js"><\/script>')</script>
+    <script src="js/holder.min.js"></script>
+    <script>
+      $(function () {
+        Holder.addTheme("thumb", { background: "#55595c", foreground: "#eceeef", text: "Thumbnail" });
+      });
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/formselect.js"></script>
+    <script src="js/engine.js"></script>
+    <script>
+      $(() => {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </body>
+</html>

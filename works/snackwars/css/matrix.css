@@ -1,0 +1,13 @@
+
+body {
+  background-image: url("../img/tilewood.png");   /*  use tile02.png OR tilewood.png */
+  height: 100vh;
+}
+
+#title {
+  text-shadow: 0 1px 7px rgba(0, 0, 0, 0.9);
+}
+
+#subtitle {
+  text-shadow: 0 1px 7px rgba(0, 0, 0, 0.9);
+}
